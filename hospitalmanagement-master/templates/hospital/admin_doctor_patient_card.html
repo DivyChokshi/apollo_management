@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .card {
+      box-shadow: 0.7rem 0.3rem 0.7rem 0 rgba(0, 0, 0, 0.3);
+      width: 15rem;
+      margin: auto;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      height: 21rem;
+      border-radius: 1rem;
+    }
+
+    .title {
+      color: #FC7300;
+      font-size: 1.2rem;
+      padding-top: 0.4rem;
+    }
+
+    button {
+      display: inline-block;
+      padding: 0 0.2rem 0.2rem;
+      color: #BFDB38;
+      background-color: rgb(31, 138, 112);
+      text-align: center;
+      cursor: pointer;
+      width: 90%;
+      font-size: 1.2rem;
+      margin: 0.2rem 0;
+      border-radius: 1rem;
+    }
+
+    button:hover,
+    a:hover {
+      opacity: 0.7;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      padding: 5rem 1rem;
+    }
+
+    a:link {
+      text-decoration: none;
+    }
+
+    a {
+      color: #BFDB38 !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="grid-container">
+    <div class="grid-item">
+      <div class="card">
+        <img src="{% static "images/admin.png" %}" alt="John" style="padding: 0.5rem; border-radius: 1rem;">
+        <p class="title">Admin</p>
+        <p><button><a href="/adminclick"><strong>View</strong></a></button></p>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="card">
+        <img src="{% static "images/Doctor.png" %}" alt="John" style="padding: 0.5rem; border-radius: 1rem;">
+        <p class="title">Doctor</p>
+        <p><button><a href="/doctorclick"><strong>View</strong></a></button></p>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="card">
+        <img src="{% static "images/Front-Desk-Operator.jpg" %}" alt="John" style="padding: 0.5rem; border-radius: 1rem;">
+        <p class="title">Front Desk Operator</p>
+        <p><button><a href="/frontdeskclick"><strong>View</strong></a></button></p>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="card">
+        <img src="{% static "images/Data-Entry-Operator.jpg" %}" alt="John" style="padding: 0.5rem; border-radius: 1rem;">
+        <p class="title">Data Entry Operator</p>
+        <p><button><a href="/dataentryclick"><strong>View</strong></a></button></p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
