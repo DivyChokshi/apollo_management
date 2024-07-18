@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 import matplotlib.pyplot as plt
 
 
-# departments=[('Cardiologist','Cardiologist'),
+# departments=[('Cardiologist','Cardiologist')
 # ('Dermatologists','Dermatologists'),
 # ('Emergency Medicine Specialists','Emergency Medicine Specialists'),
 # ('Allergists/Immunologists','Allergists/Immunologists'),
