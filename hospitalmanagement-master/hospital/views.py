@@ -23,7 +23,7 @@ START_HRS = 8
 END_HRS = 21
 BUFFER = 15
 
-# Create your views here.
+# Create your views here
 
 def home_view(request):
     # send email to doctor about the patient test results every sunday
